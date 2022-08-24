@@ -16,6 +16,7 @@ app.post('/create-user', async function(request, response){
 
   const dataCreate = {
     appId: 'default',
+    username: dataRequest.username,
     password: dataRequest.password,
     email: dataRequest.email,
     invitationToken: 'enjoy',
